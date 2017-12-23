@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    tools:context="com.example.dakot.dinto.MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <TableRow
+        android:id="@+id/redRow"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/redCell1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell2"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell3"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell4"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="none"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/redCell5"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell6"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell7"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell8"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell9"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/redCell10"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/yellowRow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redRow">
+
+        <EditText
+            android:id="@+id/yellowCell1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell2"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell3"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell4"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell5"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell6"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="none"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/yellowCell7"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell8"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell9"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/yellowCell10"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/blueRow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowRow">
+
+        <EditText
+            android:id="@+id/blueCell1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell2"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell3"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell4"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell5"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="none"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/blueCell6"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell7"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell8"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell9"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/blueCell10"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight=".10"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/scoreBox"
+        android:layout_width="42dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="69dp"
+        android:background="@null"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowRow"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/penalty1"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:onClick="penaltyClick"
+        app:layout_constraintStart_toEndOf="@+id/penaltyLabel"
+        app:layout_constraintTop_toBottomOf="@+id/blueRow" />
+
+    <Button
+        android:id="@+id/penalty2"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:onClick="penaltyClick"
+        app:layout_constraintStart_toEndOf="@+id/penalty1"
+        app:layout_constraintTop_toBottomOf="@+id/blueRow" />
+
+    <Button
+        android:id="@+id/penalty3"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:onClick="penaltyClick"
+        app:layout_constraintStart_toEndOf="@+id/penalty2"
+        app:layout_constraintTop_toBottomOf="@+id/blueRow" />
+
+    <Button
+        android:id="@+id/penalty4"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:onClick="penaltyClick"
+        app:layout_constraintStart_toEndOf="@+id/penalty3"
+        app:layout_constraintTop_toBottomOf="@+id/blueRow" />
+
+    <TextView
+        android:id="@+id/penaltyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Penalties:"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueRow" />
+
+    <TextView
+        android:id="@+id/penaltyScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/equals" />
+
+    <TextView
+        android:id="@+id/pentagonScore5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/darker_gray"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/minus" />
+
+    <TextView
+        android:id="@+id/pentagonScore4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus7" />
+
+    <TextView
+        android:id="@+id/pentagonScore3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus6" />
+
+    <TextView
+        android:id="@+id/pentagonScore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus5" />
+
+    <TextView
+        android:id="@+id/pentagonScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus4" />
+
+    <TextView
+        android:id="@+id/blueScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorPrimary"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus3" />
+
+    <TextView
+        android:id="@+id/yellowScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/yellow"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus2" />
+
+    <TextView
+        android:id="@+id/redScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorAccent"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus1" />
+
+    <TextView
+        android:id="@+id/plus6"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pentagonScore4" />
+
+    <TextView
+        android:id="@+id/plus5"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pentagonScore3" />
+
+    <TextView
+        android:id="@+id/plus4"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pentagonScore2" />
+
+    <TextView
+        android:id="@+id/plus3"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pentagonScore1" />
+
+    <TextView
+        android:id="@+id/plus2"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/blueScore" />
+
+    <TextView
+        android:id="@+id/plus1"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yellowScore" />
+
+    <TextView
+        android:id="@+id/plus7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pentagonScore5" />
+
+    <TextView
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="-"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/penaltyScore" />
+
+    <TextView
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="="
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scoreBox" />
+
+    <CheckBox
+        android:id="@+id/redDie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="clickCheckBox"
+        android:text="Red Die"
+        app:layout_constraintEnd_toStartOf="@+id/yellowDie"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/yellowDie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="clickCheckBox"
+        android:text="Yellow Die"
+        app:layout_constraintEnd_toStartOf="@+id/blueDie"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/blueDie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="clickCheckBox"
+        android:text="Blue Die"
+        app:layout_constraintEnd_toStartOf="@+id/rollButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12dp"
+        android:enabled="false"
+        android:onClick="rollDice"
+        android:text="Roll 0 Dice"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/diceRoll"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diceRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="17dp"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="12dp"
+        android:onClick="newGame"
+        android:text="New Game"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
