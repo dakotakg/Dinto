@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_main);
         String[] rows = new String[] { "red", "yellow", "blue" };
         this.columns = new EditText[][] {
@@ -93,11 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                         calcScore(v);
-                        if (actionId == EditorInfo.IME_ACTION_DONE) {
-                            return false;
-                        } else {
-                            return true;
-                        }
+                        return actionId != EditorInfo.IME_ACTION_DONE;
                     }
                 });
             }
@@ -237,8 +233,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (!TextUtils.isEmpty(pentagonValue)) {
                 fullColumn = true;
-                for (int i = 0; i < columnCells.length; i++) {
-                    if (TextUtils.isEmpty(columnCells[i].getText().toString())) {
+                for (EditText columnCell : columnCells) {
+                    if (TextUtils.isEmpty(columnCell.getText().toString())) {
                         fullColumn = false;
                         break;
                     }
@@ -265,9 +261,9 @@ public class MainActivity extends AppCompatActivity {
             ArrayList<Integer> columnValues = new ArrayList<>();
             int columnValue;
             EditText[] column = this.columns[i];
-            for (int j = 0; j < column.length; j++) {
-                if (!TextUtils.isEmpty(column[j].getText().toString())) {
-                    columnValue = Integer.parseInt(column[j].getText().toString());
+            for (EditText aColumn : column) {
+                if (!TextUtils.isEmpty(aColumn.getText().toString())) {
+                    columnValue = Integer.parseInt(aColumn.getText().toString());
                     if (columnValues.contains(columnValue)) {
                         illegalMove = true;
                         illegalMessage = "Column " + (i + 1) + " can't have a duplicate value(" + columnValue + ")";
@@ -331,27 +327,24 @@ public class MainActivity extends AppCompatActivity {
         CheckBox redDie = findViewById(R.id.redDie);
         CheckBox yellowDie = findViewById(R.id.yellowDie);
         CheckBox blueDie = findViewById(R.id.blueDie);
-        int diceCount = 0;
-        int randomLimit;
+        int rollResult = 0;
         Random rand = new Random();
 
         if (redDie.isChecked()) {
-            diceCount++;
+            rollResult += rand.nextInt(6) + 1;
         }
         if (yellowDie.isChecked()) {
-            diceCount++;
+            rollResult += rand.nextInt(6) + 1;
         }
         if (blueDie.isChecked()) {
-            diceCount++;
+            rollResult += rand.nextInt(6) + 1;
         }
 
-        if (diceCount == 0) {
+        if (rollResult == 0) {
             return;
         }
 
-        randomLimit = 6 * diceCount;
-
-        diceRoll.setText(Integer.toString(rand.nextInt(randomLimit - diceCount + 1) + diceCount));
+        diceRoll.setText(Integer.toString(rollResult));
     }
 
     public void clickCheckBox(android.view.View v) {
